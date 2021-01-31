@@ -7,7 +7,7 @@ if [ ! -d clean_trainset_wav_16k ]; then
     # Clean utterances
     if [ ! -f clean_trainset_wav.zip ]; then
         echo 'DOWNLOADING CLEAN DATASET...'
-        wget http://datashare.is.ed.ac.uk/bitstream/handle/10283/1942/clean_trainset_wav.zip
+        wget --no-check-certificate http://datashare.is.ed.ac.uk/bitstream/handle/10283/1942/clean_trainset_wav.zip
     fi
     if [ ! -d clean_trainset_wav ]; then
         echo 'INFLATING CLEAN TRAINSET ZIP...'
@@ -27,7 +27,7 @@ if [ ! -d noisy_trainset_wav_16k ]; then
     # Noisy utterances
     if [ ! -f noisy_trainset_wav.zip ]; then
         echo 'DOWNLOADING NOISY DATASET...'
-        wget http://datashare.is.ed.ac.uk/bitstream/handle/10283/1942/noisy_trainset_wav.zip
+        wget --no-check-certificate http://datashare.is.ed.ac.uk/bitstream/handle/10283/1942/noisy_trainset_wav.zip
     fi
     if [ ! -d noisy_trainset_wav ]; then
         echo 'INFLATING NOISY TRAINSET ZIP...'
